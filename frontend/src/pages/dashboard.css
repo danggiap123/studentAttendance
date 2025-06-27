@@ -1,0 +1,162 @@
+/* Tổng thể */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Header */
+.dashboard-header {
+  background-color: #4a90e2; /* Màu xanh lam tươi */
+  color: #ffffff;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  width: 250px;
+  background: linear-gradient(135deg, #ff7eb3, #ffa400, #4a90e2, #50d890); /* Màu gradient sặc sỡ */
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: sidebarFadeIn 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Hiệu ứng sidebar khi load */
+@keyframes sidebarFadeIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.avatar {
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ không gian có sẵn (theo chiều rộng của phần tử cha) */
+  max-width: 150px; /* Giới hạn chiều rộng tối đa của ảnh */
+  max-height: 150px; /* Giới hạn chiều cao tối đa của ảnh */
+  height: auto; /* Đảm bảo ảnh giữ tỉ lệ khi thay đổi kích thước */
+  border-radius: 50%; /* Làm tròn ảnh */
+  margin: 0 auto; /* Căn giữa ảnh */
+  display: block; /* Hiển thị ảnh dưới dạng block để căn giữa */
+  border: 2px solid #fff; /* Thêm viền xung quanh ảnh */
+}
+
+.username {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dashboard-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Chiều rộng của ul bằng với chiều rộng của sidebar */
+}
+
+.dashboard-sidebar ul li {
+  margin: 15px 0; /* Khoảng cách giữa các nút */
+  width: 100%;
+}
+.dashboard-sidebar ul li a {
+  border: 2px solid #fff; /* Viền cho tất cả các nút */
+  padding: 10px;
+  text-decoration: none;
+  background-color: #007bff;
+}
+
+/* Màu nền cho các nút khi chưa hover (màu xanh dương) */
+.dashboard-sidebar ul li a {
+  text-decoration: none;
+  color: #fff;  /* Màu chữ trắng */
+  font-size: 18px;
+  padding: 15px;
+  display: block;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: #007bff;  /* Màu xanh dương cho nút khi chưa hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Bóng mờ nhẹ */
+  border: 2px solid transparent;  /* Khung nền mặc định là trong suốt */
+}
+
+/* Màu nền khi hover (màu thay đổi khi di chuột vào) */
+.dashboard-sidebar ul li a:hover {
+  background: #50d890;  /* Màu nền khi hover (màu xanh lá) */
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.7); /* Hiệu ứng sáng hơn khi hover */
+  transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+  border-color: #ffffff;  /* Viền trắng khi hover */
+}
+
+/* Màu nền khi nút được chọn */
+.dashboard-sidebar ul li a.active {
+  background: #004a80; /* Màu nền khi active - xanh dương đậm hơn */
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.8);
+  border-color: #ffffff;  /* Viền trắng khi active */
+}
+
+/* Đảm bảo rằng viền hiển thị đúng */
+.dashboard-sidebar ul li a {
+  border-width: 2px;  /* Đặt chiều rộng viền rõ ràng */
+  border-style: solid;  /* Chắc chắn rằng viền có kiểu solid */
+  border-color: #ffffff;  /* Màu viền mặc định là trắng */
+}
+
+/* Thêm hiệu ứng cho các liên kết với icon nếu có */
+.dashboard-sidebar ul li a i {
+  margin-right: 10px; /* Khoảng cách giữa icon và text */
+  transition: transform 0.3s ease;
+}
+
+.dashboard-sidebar ul li a:hover i {
+  transform: rotate(15deg); /* Xoay icon khi hover */
+}
+
+/* Main content */
+.dashboard-main {
+  margin-left: 270px; /* Đẩy nội dung sang phải */
+  padding: 20px;
+}
+
+.dashboard-main h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Footer */
+.dashboard-footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 270px; /* Căn lề với sidebar */
+  width: calc(100% - 270px);
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}

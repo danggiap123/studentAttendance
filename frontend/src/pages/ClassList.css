@@ -1,0 +1,88 @@
+.dashboard-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .dashboard-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .dashboard-sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .username {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .dashboard-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dashboard-sidebar li {
+    margin: 10px 0;
+  }
+  
+  .dashboard-sidebar li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dashboard-sidebar li a:hover {
+    color: #4CAF50;
+  }
+  
+  .dashboard-main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .class-list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .class-list-table th, .class-list-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .class-list-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .dashboard-footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+  }
+  

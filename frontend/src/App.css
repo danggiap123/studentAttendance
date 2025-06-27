@@ -1,0 +1,332 @@
+/* Tổng thể */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Hiệu ứng chuyển màu nền */
+  transition: background 0.5s ease;
+}
+
+/* Container tổng */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+.home-header {
+  background: linear-gradient(90deg, #007BFF, #0056b3); /* Hiệu ứng chuyển màu xanh dương đậm nhạt */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng mềm mại */
+  border-bottom: 3px solid #0056b3; /* Viền nhấn ở dưới */
+  transition: background 0.5s ease;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 2.5rem; /* Tăng kích thước chữ */
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Main Content */
+.home-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.content-wrapper {
+  text-align: center;
+  background: white;
+  padding: 100px 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+.content-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+  background: #f0f8ff; /* Chuyển màu nền khi hover */
+}
+
+.content-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.auth-buttons .btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons .btn-primary {
+  background-color: #007BFF;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.auth-buttons .btn-primary:hover {
+  background-color: white;
+  color: #007BFF;
+  border: 2px solid #007BFF;
+}
+
+.auth-buttons .btn-secondary {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.auth-buttons .btn-secondary:hover {
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+/* Footer */
+.home-footer {
+  background: linear-gradient(90deg, #333, #555); /* Chuyển màu đen -> xám đậm */
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* Giảm padding để footer ngắn hơn */
+  border-top: 3px solid #555; /* Viền nhấn ở trên */
+  font-size: 0.9rem; /* Thu nhỏ kích thước chữ */
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: background 0.5s ease;
+}
+
+.home-footer:hover {
+  background: linear-gradient(90deg, #007BFF, #4CAF50); /* Đổi màu nền khi hover */
+}
+
+.home-footer p {
+  margin: 0;
+  font-size: 0.9rem; /* Thu nhỏ chữ */
+}
+
+/* Footer cải tiến - Thêm đường nét hiện đại */
+.home-footer::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #007BFF, #4CAF50); /* Đường nhấn chuyển màu giữa */
+  transition: background 0.5s ease;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Register Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+}
+
+.register-form .form-group label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.register-form .form-group input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-form .form-group input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Định dạng cho Quê quán */
+.address-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  gap: 20px; /* Khoảng cách giữa các mục */
+}
+
+.address-item {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* Đảm bảo các mục không quá rộng */
+}
+
+.address-item label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 8px; /* Tạo khoảng cách giữa nhãn và ô nhập */
+  text-align: left; /* Căn trái nhãn */
+}
+
+.address-item input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Đảm bảo ô nhập liệu chiếm toàn bộ chiều rộng khả dụng */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng mềm mại */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.address-item input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Hiển thị nhãn của Quê quán */
+.form-group label[for="address"] {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #007BFF;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+
+/* Form container */
+.register-main .form-container {
+  text-align: center;
+  background: white;
+  padding: 50px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Address group */
+.address-group {
+  display: flex;
+  gap: 10px;
+}
+
+.address-group input {
+  flex: 1;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.form-group input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* src/App.css */
+
+.login-message {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #dc3545; /* Màu đỏ cho thông báo lỗi */
+  font-weight: bold;
+}
+
+.login-message.success {
+  color: #28a745; /* Màu xanh lá cho thông báo thành công */
+}

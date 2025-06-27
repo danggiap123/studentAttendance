@@ -1,0 +1,83 @@
+.add-file-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.add-file-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.add-file-upload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.add-file-upload input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-file-upload button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-file-upload button:hover {
+  background-color: #45a049;
+}
+
+.add-file-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #e74c3c;
+}
+
+.add-file-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-file-container th,
+.add-file-container td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.add-file-container th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-file-container tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.add-file-container tbody tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.add-file-container table caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}

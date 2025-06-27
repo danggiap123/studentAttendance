@@ -1,0 +1,17 @@
+.myapp {
+  margin-left: 250px;
+  /* Dịch toàn bộ nội dung sang phải */
+}
+
+/* Footer giữ nguyên vị trí cuối trang */
+.real-attenndance-footer {
+  position: fixed;
+  left: 250px;
+  /* Cập nhật vị trí footer theo phần dịch */
+  bottom: 0;
+  width: calc(100% - 250px);
+  /* Đảm bảo không bị tràn ngang */
+  background-color: #333;
+  color: white;
+  text-align: center;
+}

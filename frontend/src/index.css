@@ -1,0 +1,32 @@
+/* index.css */
+
+/* Tạo độ đậm cho các chữ trong các phần tử */
+h1, a {
+  font-weight: bold;
+}
+
+/* Thêm một số hiệu ứng cho các liên kết */
+a {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+}
+
+/* Tùy chỉnh bảng điều hướng */
+ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}

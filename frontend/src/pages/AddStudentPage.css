@@ -1,0 +1,82 @@
+/* src/pages/AddStudentPage.css */
+
+.add-student-page {
+  margin-left: 250px; /* Đẩy nội dung sang phải tránh sidebar */
+  max-width: calc(100% - 250px); /* Chiều rộng không tràn ra ngoài */
+  padding: 30px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.add-student-page h1 {
+  margin-bottom: 20px;
+  color: #343a40;
+  text-align: center;
+}
+
+.upload-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.upload-section button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-section button:hover {
+  background-color: #0056b3;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.scan-section {
+  margin-top: 20px;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  color: #dc3545;
+  font-weight: bold;
+}
